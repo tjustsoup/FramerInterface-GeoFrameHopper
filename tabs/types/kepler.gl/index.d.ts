@@ -1,0 +1,11 @@
+declare module "kepler.gl";
+declare module 'kepler.gl/components';
+declare module "kepler.gl/middleware";
+declare module "kepler.gl/reducers";
+declare module "kepler.gl/actions";
+declare module "kepler.gl/dist/components/map/split-map-button"
+declare module "kepler.gl/dist/components/map/toggle-3d-button"
+declare module "kepler.gl/dist/components/map/layer-selector-panel"
+declare module "kepler.gl/dist/components/map/map-legend-panel"
+declare module "kepler.gl/dist/components/map/map-draw-panel"
+declare module "kepler.gl/dist/components/map/locale-panel"
