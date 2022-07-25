@@ -15,12 +15,13 @@ import {
 } from "@mui/material";
 import React from "react";
 import store from "./store";
-// import mainStore from "../store/store";
+import pageStore from "../store/store"
 import { updateMap, deleteFeature, setFeatures } from "kepler.gl/actions";
 import { useDispatch } from "react-redux";
 // icons
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import { setPage } from "../store/reducers/pageSlice";
 
 type LOL = [
   {
@@ -185,7 +186,7 @@ export default function LocationPanel() {
         </Grid>
         <Grid item container direction="column" sx={{ justifyContent: "flex-end" }} xs={6}>
           <Grid item>
-            <Button variant="outlined">
+            <Button variant="outlined" onClick={() => pageStore.dispatch(setPage("Main"))}>
               Go Back
             </Button>
           </Grid>

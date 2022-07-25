@@ -23,7 +23,7 @@ const reducers = combineReducers({
           show: false
         },
         mapDraw: {
-          show: false
+          show: true
         }
       }
     },

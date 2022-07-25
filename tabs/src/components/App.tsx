@@ -7,8 +7,8 @@ import "./App.css";
 import TabConfig from "./TabConfig";
 import { TeamsFxContext } from "./Context";
 import { Provider as ReduxProvider } from "react-redux";
-import store from "../kepler.gl/store";
-import { createTheme, CssBaseline, ThemeProvider } from "@mui/material";
+import { createTheme, ThemeProvider } from "@mui/material";
+import store from "../store/store";
 
 const esqTheme = createTheme({
   palette: {

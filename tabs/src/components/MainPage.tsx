@@ -1,7 +1,14 @@
 import { Button, Card, CardContent, Grid, Typography } from "@mui/material";
 import React from "react";
+import { useDispatch } from "react-redux";
+import { setPage } from "../store/reducers/pageSlice";
 
 export default function MainPage(props: any) {
+  const dispatch = useDispatch()
+  function start() {
+    dispatch(setPage("Framing"))
+  }
+
   return (
     <Grid
       container
@@ -45,7 +52,7 @@ export default function MainPage(props: any) {
       </Grid>
       <Grid item container xs={12} sx={{ justifyContent: "center" }}>
         <Grid item>
-          <Button variant="contained" onClick={() => props.setPage("Framing")}>
+          <Button variant="contained" onClick={start}>
             Start Framing
           </Button>
         </Grid>
